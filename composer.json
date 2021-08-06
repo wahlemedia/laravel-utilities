@@ -1,17 +1,17 @@
 {
-    "name": "vendor_slug/package_slug",
-    "description": ":package_description",
+    "name": "wahlemedia/laravel-utilities",
+    "description": "A package that contains useful utilities.",
     "keywords": [
-        ":vendor_name",
+        "wahlemedia",
         "laravel",
-        "package_slug"
+        "laravel-utilities"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/wahlemedia/laravel-utilities",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Philipp Wahle",
+            "email": "info@wahlemedia.de",
             "role": "Developer"
         }
     ],
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Wahlemedia\\Utilities\\": "src",
+            "Wahlemedia\\Utilities\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Wahlemedia\\Utilities\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +50,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Wahlemedia\\Utilities\\UtilitiesServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "Utilities": "Wahlemedia\\Utilities\\UtilitiesFacade"
             }
         }
     },
