@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Wahlemedia\Utilities\Models\Concerns;
-
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
@@ -26,9 +24,9 @@ trait HasUuid
     {
         static::creating(function (Model $model) {
             dd('bootHasUuid');
-            $model->{self::uuidField()} = match(config('utilities.uuid')){
-            'normal' =>  Str::uuid()->toString(),
-            'ordered' =>  Str::orderedUuid()->toString(),
+            $model->{self::uuidField()} = match (config('utilities.uuid')) {
+                'normal' => Str::uuid()->toString(),
+            'ordered' => Str::orderedUuid()->toString(),
             };
         });
     }
